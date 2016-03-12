@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_layout"
+
+        android:id="@+id/app_bar">
+    </include>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="70"
+                android:background="@android:color/black">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/projectimage"
+                        android:layout_gravity="top|center_horizontal"
+                        android:src="@drawable/drbg"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"/>
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:paddingLeft="20dp"
+                        android:paddingBottom="13dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Event Name"
+                            android:textSize="17dp"
+                            android:textColor="#efe6e3"
+                            android:textStyle="bold"
+                            android:id="@+id/eventname" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="30">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="100"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_events_date"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sunday, 1 Feb, 18:00"
+                            android:layout_gravity="center"
+                            android:textColor="#9e9e9e"
+                            android:id="@+id/eventtime"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_events_venue"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Anna Auditorium"
+                            android:textColor="#9e9e9e"
+                            android:id="@+id/eventlocation"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some agency has just started using a fancy desktop-publishing system, but the documentation is giving people fits. You receive a request for proposals from this agency to write some sort of simplified guide or startup guide.
+ You want to write a business prospectus for the kind of business you intend to startup. Imagine that you want a top-quality prospectus and don't have the time or expertise to prepare one; therefore, you send out request for proposals to professional consultants. You change hats and pretend you are Business Startup Consultants, Inc., and send your other self a proposal to do the job. "
+                android:id="@+id/eventdescription"
+                android:textSize="16dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#616161"
+                android:padding="19dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_events_register"
+        fab:fab_colorNormal="#f44336"
+        fab:fab_colorPressed="#D32F2F"
+        fab:fab_colorRipple="@color/colorAccent" />
+
+
+</FrameLayout>
+    </LinearLayout>

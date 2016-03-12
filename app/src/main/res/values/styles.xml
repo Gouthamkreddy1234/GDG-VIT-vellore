@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.MyTheme">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme.MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:toolbarStyle">@style/ToolbarTheme</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.MyAppTheme</item>
+        </style>
+    <style name="PopupMenu.MyAppTheme" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+    <style name="FacebookLoginButton">
+
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+
+    <style name="Googlesigninbutton">
+
+        <item name="android:background">@drawable/ic_googlelogin</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="ToolbarTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+ <item name="android:textColor">@android:color/white</item>
+
+
+    </style>
+    <style name="Translucent" parent="android:Theme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+</resources>

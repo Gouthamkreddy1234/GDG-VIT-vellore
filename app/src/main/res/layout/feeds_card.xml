@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardCornerRadius="3dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+
+    ><!--since the margin bottom has been now reduced to 8dp-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top"
+        android:weightSum="100">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:paddingRight="0dp">
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="75"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+                    <com.melnykov.fab.FloatingActionButton
+                        android:id="@+id/dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/logo"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        fab:fab_shadow="false"
+                        fab:fab_colorNormal="@android:color/white"
+                        fab:fab_colorPressed="@android:color/white"
+                        fab:fab_colorRipple="@android:color/white" />
+
+               <!-- <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/logo"
+                    android:id="@+id/dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"/>-->
+                <!--ask for an image of this size->only absolute value used-->
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:weightSum="100">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:weightSum="100">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="33.33">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|bottom"
+                            android:textStyle="bold"
+                            android:text="GDG VIT Vell"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/title123"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="33.33">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Sun, 18 Feb,2015"
+                            android:textColor="@color/dgray"
+                            android:id="@+id/date123"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="75"
+                android:layout_gravity="center_vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.CardView
+                        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/card_view2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="3dp"
+
+                        android:layout_marginRight="-2dp"
+                        card_view:cardPreventCornerOverlap="false"
+                        card_view:cardElevation="2dp"
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="#Android"
+                            android:textColor="@color/dgray"
+                            android:id="@+id/hashtag"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="4dp"
+
+                            />
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+           >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:overScrollMode="always"
+                android:id="@+id/content"
+                android:layout_gravity="center"
+                android:textColor="@color/ddgray"
+                android:text="Some agency has just started using a fancy desktop-publishing system, but the documentation is giving people fits. You receive a request for proposals from this agency to write some sort of simplified guide or startup guide.
+ You want to write a business prospectus for the kind of business you intend to startup. Imagine that you want a top-quality prospectus and don't have the time or expertise to prepare one; therefore, you send out request for proposals to professional consultants. You change hats and pretend you are Business Startup Consultants, Inc., and send your other self a proposal to do the job. "/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="25">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:id="@+id/attachedimage"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@color/tgray"
+                    android:visibility="gone"
+                    android:id="@+id/imgcountbg"
+                    android:layout_gravity="bottom|right"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SHARE"
+                        android:id="@+id/imgcount"
+                        android:textColor="#FFFFFF"
+                        android:padding="5dp"
+                        />
+                    </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:id="@+id/share_but">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SHARE"
+                        android:textColor="@color/dgray"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_events_share"/>
+                </LinearLayout>
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_plusone_medium_off_client"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/more_but"/>-->
+                <com.google.android.gms.plus.PlusOneButton
+                    xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+                    android:id="@+id/plus_one_button"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    plus:size="standard"
+                    plus:annotation="inline" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

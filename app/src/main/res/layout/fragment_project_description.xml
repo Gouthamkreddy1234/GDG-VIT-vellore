@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_gravity="center_horizontal" >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:background="@android:color/black">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/projectimage"
+                android:layout_gravity="top|center_horizontal"
+                android:src="@drawable/drbg"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:paddingLeft="20dp"
+                android:paddingBottom="13dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Project Name"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/projectname" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/projectstatus" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:background="@android:color/white">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some agency has just started using a fancy desktop-publishing system, but the documentation is giving people fits. You receive a request for proposals from this agency to write some sort of simplified guide or startup guide.
+ You want to write a business prospectus for the kind of business you intend to startup. Imagine that you want a top-quality prospectus and don't have the time or expertise to prepare one; therefore, you send out request for proposals to professional consultants. You change hats and pretend you are Business Startup Consultants, Inc., and send your other self a proposal to do the job. "
+                android:id="@+id/projectdescription"
+                android:textSize="16dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="#616161"
+                android:padding="19dp"
+                android:layout_marginTop="13dp"/>
+
+</FrameLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:src="@drawable/abc_ic_menu_share_mtrl_alpha"
+        fab:fab_colorNormal="#f44336"
+        fab:fab_colorPressed="#D32F2F"
+        fab:fab_colorRipple="#33FFFFFF" />
+
+</FrameLayout>

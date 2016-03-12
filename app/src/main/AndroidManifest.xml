@@ -1,0 +1,232 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gdgvitvellore.developers.gdgvitvellore">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@drawable/logo" android:theme="@style/AppTheme"
+
+        android:name="com.gdgvitvellore.developers.gdgvitvellore.Parser.AppController"
+      >
+
+        <activity
+            android:name=".Volley.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+       <activity
+            android:name=".Team.TeamActivity"
+            android:label="@string/app_name"
+           android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLOORE.DEVELOPERS.GDGVITVELLORE.TEAM.TEAMACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLOORE.DEVELOPERS.GDGVITVELLORE.HOMEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Feeds.HomeActivity"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLOORE.DEVELOPERS.GDGVITVELLORE.FEEDS.HOMEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <!--<activity
+            android:name=".Events.SponsorMain"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.SPONSORMAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>-->
+
+
+
+
+        <activity
+            android:name=".Events.Extendedevent"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.EXTENDEDEVENTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Events.Eventsweb"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.EVENTSWEB" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Volley.GalleryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Translucent"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.GALLERYACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+       <!-- <activity
+            android:name=".Project.ProjectActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.PROJECT.PROJECTACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name=".Project.ProjectFullActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.PROJECT.PROJECTFULLACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Volley.FeedbackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.FEEDBACKACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".Volley.ContactActivityNew"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.CONTACTCTIVITYNEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+      <!--  <activity
+            android:name=".Sponser.Sponser"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.SPONSER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>-->
+
+        <activity
+            android:name=".Sponser.SponsorFull"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.SPONSERFULL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs.AboutUsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.ABOUTUS.ABOUTUSACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutUs.AboutUs"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.ABOUTUS.ABOUTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="COM.GDGVITVELLORE.DEVELOPERS.GDGVITVELLORE.LOGIN.LOGINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBcg0ZbsGXbJ4z_u0QlbqxxSGyOUOxj72o"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            >
+
+        </meta-data>
+        <activity android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>

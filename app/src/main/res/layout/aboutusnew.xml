@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/app_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="What is GDG?"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:padding="15dp"
+            android:text=" GDG VIT Vellore is a non-profit developers group to learn share and know more about Google technologies.Our events are open to newbies,developers,managers and organizations who are interested in Google technologies or use them as a part of their projects"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Work Flow Statistics"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView3" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:weightSum="100"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:id="@+id/fl"
+            android:layout_weight="25">
+
+            <sk.kandrac.circularview.CircularView
+                android:id="@+id/circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#191919"
+                android:onClick="circleClick"
+                android:padding="0dp"
+                app:outer_width="8dp"
+                app:rotate_speed="1"
+                app:default_color="#191919">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:src="@drawable/ic_black1" />
+
+            </sk.kandrac.circularview.CircularView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inc"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/white"
+                    android:text="80%"
+                    android:layout_marginTop="24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="25">
+
+            <sk.kandrac.circularview.CircularView
+                android:id="@+id/circle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#191919"
+                android:onClick="circleClick"
+                android:padding="0dp"
+                app:outer_width="8dp"
+                app:rotate_speed="1"
+                app:default_color="#191919">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_black1" />
+
+            </sk.kandrac.circularview.CircularView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inc2"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/white"
+                    android:text="65%"
+                    android:layout_marginTop="24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="25">
+
+            <sk.kandrac.circularview.CircularView
+                android:id="@+id/circle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#191919"
+                android:onClick="circleClick"
+                android:padding="0dp"
+                app:outer_width="8dp"
+                app:rotate_speed="1"
+                app:default_color="#191919">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_black1" />
+
+            </sk.kandrac.circularview.CircularView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inc3"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/white"
+                    android:text="70%"
+                    android:layout_marginTop="24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="25">
+
+            <sk.kandrac.circularview.CircularView
+                android:id="@+id/circle4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#191919"
+                android:onClick="circleClick"
+                android:padding="0dp"
+                app:outer_width="8dp"
+                app:rotate_speed="1"
+                app:default_color="#191919">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_black1" />
+
+            </sk.kandrac.circularview.CircularView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inc4"
+                    android:textSize="17dp"
+                    android:textColor="@android:color/white"
+                    android:text="95%"
+                    android:layout_marginTop="24dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="What we Do"
+
+            android:id="@+id/textView7" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:weightSum="100"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="25"
+            android:gravity="center">
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ico1"
+                android:id="@+id/dp"
+                android:layout_gravity="center"
+                app:border_color="#191919"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:siBorderColor="#191919"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="25"
+            android:gravity="center">
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ico2"
+                app:border_color="#191919"
+                android:id="@+id/dp1"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:siBorderColor="#191919"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="25"
+            android:gravity="center">
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ico3"
+                android:id="@+id/dp2"
+                app:border_color="#191919"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:siBorderColor="#191919"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="25"
+            android:gravity="center">
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/ico4"
+                android:id="@+id/dp3"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:siBorderColor="#191919"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    <!--gravity doesnt work on wrap content->point ot be noted-->

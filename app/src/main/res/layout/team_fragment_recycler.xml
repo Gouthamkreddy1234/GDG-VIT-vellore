@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/row_holder"
+    android:clickable="true"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:paddingLeft="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:padding="5dp">
+    <com.github.siyamed.shapeimageview.CircularImageView
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:src="@drawable/hippo"
+    app:siBorderWidth="6dp"
+    android:id="@+id/dp"
+    android:layout_gravity="center"
+    android:adjustViewBounds="true"
+    android:scaleType="fitXY"
+    app:siBorderColor="@android:color/white"/>
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="20"
+            android:gravity="center_vertical">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prince Bansal"
+        android:layout_gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:textColor="@color/dgray"
+        android:id="@+id/row_text"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:layout_gravity="right|center_vertical"
+                android:paddingRight="20dp"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:textColor="@android:color/holo_orange_dark"
+                android:id="@+id/row_alpha"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/bottom_line"
+        android:visibility="gone"
+        android:layout_marginRight="32dp"></LinearLayout>
+</LinearLayout>

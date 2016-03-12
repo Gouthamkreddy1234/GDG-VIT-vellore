@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout"
+    android:weightSum="100"
+    >
+
+    <include layout="@layout/toolbar_layout"
+        android:id="@+id/app_bar">
+    </include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@android:color/white"
+            android:id="@+id/title"
+            android:text="Circle"/>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        >
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:id="@+id/content"
+            android:paddingRight="30dp"
+            android:textColor="@android:color/white"
+            android:lineSpacingExtra="20dp"
+            android:textSize="16sp"
+            android:paddingLeft="30dp"
+
+            android:paddingBottom="30dp"
+            android:text="ddshbdshbdshdsbhdbhdsfbdshfbdshfbdshfbdhfbdfhbshfbdfhbfhsdbfhdsbfdshfbdshfbdshfdhfbdsfhdsbhf"/>
+    </FrameLayout>
+
+        </LinearLayout>
+

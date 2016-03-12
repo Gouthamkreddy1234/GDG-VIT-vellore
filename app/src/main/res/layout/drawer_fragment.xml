@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_frame"
+    android:background="#ffffff"
+    android:layout_marginRight="56dp"
+
+
+    tools:context="com.gdgvitvellore.developers.gdgvitvellore.NavigationDrawerFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer_fragment_linear"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:src="@drawable/ic_matwallpaper"
+    android:scaleType="centerCrop"
+    android:adjustViewBounds="true"/>
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            app:siBorderType="fill"
+            app:siBorderColor="@android:color/white"
+            app:siBorderWidth="4dp"
+
+            android:src="@drawable/dp_prince"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/dp"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+           <!-- <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/actionlist"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown"
+                android:theme="@style/Base.Theme.AppCompat.Light"
+                android:visibility="visible"/>-->
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRINCE BANSAL"
+                android:textSize="17sp"
+                android:id="@+id/actor_name"
+                android:textColor="@android:color/white"/>
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right|center_vertical"
+
+        android:id="@+id/popup"
+        android:layout_marginRight="15dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@android:drawable/arrow_down_float"/></FrameLayout>
+</FrameLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/drawer_recycler_view"
+        ></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GDG VIT vellore</string>
+    <string name="app_name2">GDG VIT Vellore</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="draweropen">open</string>
+    <string name="drawerclose">close</string>
+    <string name="btn_logout_from_google">Logout</string>
+    <string name="facebook_app_id">852299268150159</string>
+    <string name="batchRequest">Batch Request</string>
+    <string name="loginFacebookButton">Login Facebook</string>
+    <string name="btn_revoke_access">Revoke</string>
+    <string-array name="tab_names_contact">
+        <item>Contact</item>
+        <item>Map</item>
+    </string-array>
+    <string-array name="tab_names_project">
+        <item>Description</item>
+        <item>Details</item>
+        <item>Gallery</item>
+    </string-array>
+    <string-array name="tab_names_team">
+        <item>Technical</item>
+        <item>Management</item>
+    </string-array>
+
+</resources>
